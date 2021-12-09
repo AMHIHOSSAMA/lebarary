@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Create Account</h2>
+        </div>
+        <form onsubmit="event.preventDefault(); onFormsubmit()" id="form" class="form">
+            <div class="form-control">
+                <label for="username">Titre</label>
+                <input type="text" placeholder="Titre de livre" id="username" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Author</label>
+                <input type="text" placeholder="Le nom de author" id="email" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Prix</label>
+                <input type="number" placeholder="prix de livre" id="password"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Date de publication</label>
+                <input type="date" placeholder="Date de publication" id="password2"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="pet-select" name="pet-select">La langue</label><br>
+                <select  id="pet-select" name="pet-select">
+                    <option value="">Choisir la langue</option>
+                    <option value="arabe">Arabe</option>
+                    <option value="français">Français</option>
+                    <option value="anglais">Anglais</option>
+                    <option value="espagnol">Espagnol</option>
+                </select>    
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Message Erreur</small>
+            </div> 
+            <div class="form-control">
+                    <p>Type de Live</p>
+                    <input type="radio" id="narratif" name="narratif" value="narratif">
+                    <label for="narratif" value="narratif" name="narratif">Narratif</label><br>
+                    <input type="radio" id="theatre" name="theatre" value="theatre">
+                    <label for="theatre" value="theatre" name="theatre">Théâtral</label><br>
+                    <input type="radio" id="poetique" name="poetique" value="poetique">
+                    <label for="poetique" value="poetique" name="poetique">Poétique</label><br>
+    
+                    <input type="radio" id="argumentatif" name="argumentatif" value="argumentatif">
+                    <label for="argumentatif" value="argumentatif" name="argumentatif">Argumentatif</label><br>
+    
+                    <input type="radio" id="epistolaire" name="epistolaire" value="epistolaire">
+                    <label for="epistolaire" value="epistolaire" name="epistolaire">Epistolaire</label><br>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Message Erreur</small>
+                 </div>
+                 <div>
+                     <input type="submit" value="Ajouter">
+                     <input type="reset" value="Réinitialiser">
+                 </div>
+           
+            
+        </form>
+    </div>
+    <table   cellpadding="10" class="classtable" id="table">
+                <tr>
+                    <th>Titre</th>
+                    <th>Author</th>
+                    <th>Prix</th>
+                    <th>Date</th>
+                    <th>langue</th>
+                </tr>
+            </table>
+            <tbody>
+                
+            </tbody>
+    </div>
+    
+   <script src="js.js"></script>
+    
+    
+</body>
+</html>
